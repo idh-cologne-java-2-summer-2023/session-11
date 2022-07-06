@@ -337,7 +337,7 @@ public class MyLinkedList<T> implements List<T> {
 	 * @param index
 	 * @return
 	 */
-	private ListElement getElement(int index) {
+	protected ListElement getElement(int index) {
 		if (isEmpty()) 
 			return null;
 		if (index == -1)
