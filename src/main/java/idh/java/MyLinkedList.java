@@ -21,7 +21,7 @@ public class MyLinkedList<T> implements List<T> {
 	public int size() {
 		// TODO Implement!
 		int i = 0;
-		for (T x : this)
+		for (T x: this)
 			i++;
 		return i;
 	}
