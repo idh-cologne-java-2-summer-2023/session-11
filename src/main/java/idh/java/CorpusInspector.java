@@ -27,6 +27,12 @@ public class CorpusInspector {
 		
 		System.out.println(files.size());
 		
-
+		long n = files.stream()
+				.filter( f -> !f.getName().endsWith("e") )
+				.map( f -> readin(f) )
+				.filter(s -> s.length() > 1000 )
+				.count();
+		
+		System.out.println(n);
 	}
 }
